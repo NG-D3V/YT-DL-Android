@@ -1,0 +1,6 @@
+{
+  "name": "YT Downloader",
+  "description": "Lokale YouTube Video- und Audio-Downloader App mit yt-dlp Backend-Verarbeitung, Format- & Qualitätsauswahl (360p bis 1080p, MP3/MP4), Live-Fortschrittsbalken und Download-Verwaltung.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
