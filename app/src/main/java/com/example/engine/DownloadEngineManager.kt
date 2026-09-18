@@ -263,7 +263,10 @@ class DownloadEngineManager(
         return try {
             val initialDownloaded = if (targetFile.exists()) targetFile.length() else 0L
             var currentDownloaded = initialDownloaded
-            val requestBuilder = Request.Builder().url(url)
+            val requestBuilder = Request.Builder()
+                .url(url)
+                .addHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
+                .addHeader("Accept", "*/*")
 
             if (currentDownloaded > 0) {
                 requestBuilder.addHeader("Range", "bytes=$currentDownloaded-")
